@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Cloud Apps</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>✅ Hello from Timeweb Cloud Apps (Frontend)</h1>
+    <p>Эта страница раздаётся как <code>public/index.html</code>. Измени её в репозитории — и автодеплой обновит сайт.</p>
+
+    <section class="card">
+      <h2>Быстрая проверка</h2>
+      <button id="btn">Сказать привет</button>
+      <pre id="out">...</pre>
+    </section>
+
+    <section class="card">
+      <h2>Как деплоить</h2>
+      <ol>
+        <li>Тип: <b>Frontend → Другой</b></li>
+        <li>Команда сборки: <code>echo "no build"</code></li>
+        <li>Директория сборки: <code>public</code></li>
+      </ol>
+    </section>
+
+    <footer>© 2025 Intop Integrat • Demo</footer>
+  </main>
+  <script>
+    const out = document.getElementById('out');
+    document.getElementById('btn').addEventListener('click', () => {
+      out.textContent = 'Привет, Эрик! Время: ' + new Date().toLocaleString('ru-RU');
+    });
+  </script>
+</body>
+</html>
